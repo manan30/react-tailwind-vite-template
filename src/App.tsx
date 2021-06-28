@@ -1,7 +1,7 @@
 import React from "react";
 
-function App() {
+const App = (): React.ReactElement => {
   return <div>Hello Friend</div>;
-}
+};
 
 export default App;
