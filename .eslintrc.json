@@ -1,11 +1,11 @@
 {
   "root": true,
+  "parser": "@typescript-eslint/parser",
   "env": {
     "browser": true,
     "es2021": true,
     "node": true
   },
-  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -38,5 +38,7 @@
     "plugin:@typescript-eslint/recommended",
     "prettier"
   ],
-  "rules": {}
+  "rules": {
+    "no-console": "warn"
+  }
 }
