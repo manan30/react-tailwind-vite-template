@@ -1,10 +1,6 @@
-module.export = {
-  purge: ['./index.html', './src/**/*.tsx'],
-  darkMode: false, // or 'media' or 'class'
+module.exports = {
+  content: ['./index.html', './src/**/*.tsx'],
   theme: {
-    extend: {}
-  },
-  variants: {
     extend: {}
   },
   plugins: []
