@@ -3,9 +3,6 @@
     "target": "ESNext",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "types": ["vite/client"],
-    "allowJs": false,
-    "skipLibCheck": false,
-    "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
@@ -14,7 +11,11 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react"
+    "jsx": "react",
+    "useUnknownInCatchVariables": true,
+    "noImplicitAny": true,
+    "typeRoots": ["./node_modules/@types", "./src/@types"]
   },
-  "include": ["."]
+  "include": ["./src/**/*", "./**/*.{js,ts}"],
+  "exclude": ["node_modules", "dist"]
 }

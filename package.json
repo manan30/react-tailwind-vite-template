@@ -10,7 +10,7 @@
     "format": "prettier --write '**/*.{ts,tsx,css}'",
     "format:check": "prettier --check '**/*.{ts,tsx,css}'",
     "prepare": "husky install",
-    "precommit": "yarn lint:check && yarn format:check"
+    "precommit": "pnpm lint:check && pnpm format:check"
   },
   "dependencies": {
     "react": "^17.0.2",
